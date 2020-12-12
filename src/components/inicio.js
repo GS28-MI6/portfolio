@@ -93,7 +93,7 @@ export default class inicio extends Component {
               onClick={() => (window.location = "/monitoreo")}
             >
               <ReactBootstrap.Card
-                style={{ width: "18rem", cursor: "pointer" }}
+                style={{ width: "40rem", cursor: "pointer" }}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
@@ -102,18 +102,17 @@ export default class inicio extends Component {
                 />
                 <ReactBootstrap.Card.Body>
                   <ReactBootstrap.Card.Title>
-                    Card Title
+                    Centro de monitoreo
                   </ReactBootstrap.Card.Title>
-                  <ReactBootstrap.Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </ReactBootstrap.Card.Text>
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
-            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
+            <ReactBootstrap.Col
+              className="d-flex my-2 justify-content-md-center"
+              onClick={() => (window.location = "/ventas")}
+            >
               <ReactBootstrap.Card
-                style={{ width: "18rem", cursor: "pointer" }}
+                style={{ width: "40rem", cursor: "pointer" }}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
@@ -122,52 +121,62 @@ export default class inicio extends Component {
                 />
                 <ReactBootstrap.Card.Body>
                   <ReactBootstrap.Card.Title>
-                    Card Title
+                    Dashboard de ventas
                   </ReactBootstrap.Card.Title>
-                  <ReactBootstrap.Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </ReactBootstrap.Card.Text>
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
-            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
+          </ReactBootstrap.Row>
+          <ReactBootstrap.Row className="d-flex justify-content-md-center mt-5">
+            <ReactBootstrap.Col
+              className="d-flex my-2 justify-content-md-center"
+              onClick={() => (window.location = "/seguridad")}
+            >
               <ReactBootstrap.Card
-                style={{ width: "18rem", cursor: "pointer" }}
+                style={{
+                  width: "40rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundColor: "#F5F5F5",
+                }}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
                   src={Card3}
-                  style={{ width: "100%", height: 350 }}
+                  style={{ width: "40%", height: 350 }}
                 />
-                <ReactBootstrap.Card.Body>
+                <ReactBootstrap.Card.Body style={{ width:"100%", backgroundColor: "white" }}>
                   <ReactBootstrap.Card.Title>
-                    Card Title
+                    Aplicación de ventas
                   </ReactBootstrap.Card.Title>
-                  <ReactBootstrap.Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </ReactBootstrap.Card.Text>
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
-            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
+            <ReactBootstrap.Col
+              className="d-flex my-2 justify-content-md-center"
+              onClick={() => (window.location = "/ventasApp")}
+            >
               <ReactBootstrap.Card
-                style={{ width: "18rem", cursor: "pointer" }}
+                style={{
+                  width: "40rem",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundColor: "#F5F5F5",
+                }}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
                   src={Card4}
-                  style={{ width: "100%", height: 350 }}
+                  style={{ width: "40%", height: 350 }}
                 />
-                <ReactBootstrap.Card.Body>
+                <ReactBootstrap.Card.Body style={{ width:"100%", backgroundColor: "white" }}>
                   <ReactBootstrap.Card.Title>
                     Card Title
                   </ReactBootstrap.Card.Title>
-                  <ReactBootstrap.Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </ReactBootstrap.Card.Text>
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
