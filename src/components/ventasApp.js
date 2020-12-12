@@ -3,7 +3,6 @@ import * as ReactBootstrap from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import VentasApp from "../resources/capturas/ventasApp.jpg";
 import VentasApp2 from "../resources/capturas/ventasApp2.jpg";
-import LogoRedux from "../resources/logos/redux.png";
 import LogoReact from "../resources/logos/react.png";
 import LogoNode from "../resources/logos/node.png";
 import LogoJavascript from "../resources/logos/javascript.png";

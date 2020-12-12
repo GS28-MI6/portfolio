@@ -5,7 +5,6 @@ import Seguridad from "../resources/capturas/seguridad.jpg";
 import Seguridad2 from "../resources/capturas/seguridad2.jpg";
 import Seguridad3 from "../resources/capturas/seguridad3.jpg";
 import Seguridad4 from "../resources/capturas/seguridad4.jpg";
-import LogoRedux from "../resources/logos/redux.png";
 import LogoReact from "../resources/logos/react.png";
 import LogoNode from "../resources/logos/node.png";
 import LogoJavascript from "../resources/logos/javascript.png";
