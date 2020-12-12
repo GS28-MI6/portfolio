@@ -17,14 +17,14 @@ export default class ventasApp extends Component {
         className="m-0 d-flex flex-column"
         style={{
           height: "60%",
-          backgroundColor: "#d3d3d3",
+          backgroundColor: "#F5F5F5",
           paddingLeft: "15rem",
           paddingRight: "15rem",
         }}
       >
         <div
           className="p-0 m-0 h-100"
-          style={{ width: "100%", backgroundColor: "#d3d3d3" }}
+          style={{ width: "100%", backgroundColor: "#F5F5F5" }}
         >
           <h2 className="py-4">Aplicación de ventas</h2>
           <ReactBootstrap.Container

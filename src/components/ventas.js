@@ -20,7 +20,7 @@ export default class monitoreo extends Component {
       >
         <div
           className="p-0 m-0 h-100"
-          style={{ width: "100%", backgroundColor: "#d3d3d3" }}
+          style={{ width: "100%", backgroundColor: "#F5F5F5" }}
         >
           <h2 className="py-4">Dashboard de ventas</h2>
           <ReactBootstrap.Carousel className="py-2 px-2 text-align-center">
