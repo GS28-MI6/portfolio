@@ -90,10 +90,10 @@ export default class inicio extends Component {
           <ReactBootstrap.Row className="d-flex justify-content-md-center mt-5">
             <ReactBootstrap.Col
               className="d-flex my-2 justify-content-md-center"
-              onClick={() => (window.location = "/monitoreo")}
             >
               <ReactBootstrap.Card
                 style={{ width: "40rem", cursor: "pointer" }}
+                onClick={() => (window.location.href = "/monitoreo")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
@@ -109,10 +109,10 @@ export default class inicio extends Component {
             </ReactBootstrap.Col>
             <ReactBootstrap.Col
               className="d-flex my-2 justify-content-md-center"
-              onClick={() => (window.location = "/ventas")}
             >
               <ReactBootstrap.Card
                 style={{ width: "40rem", cursor: "pointer" }}
+                onClick={() => (window.location.href = "/ventas")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
@@ -130,7 +130,6 @@ export default class inicio extends Component {
           <ReactBootstrap.Row className="d-flex justify-content-md-center mt-5">
             <ReactBootstrap.Col
               className="d-flex my-2 justify-content-md-center"
-              onClick={() => (window.location = "/seguridad")}
             >
               <ReactBootstrap.Card
                 style={{
@@ -141,6 +140,7 @@ export default class inicio extends Component {
                   alignItems: "center",
                   backgroundColor: "#F5F5F5",
                 }}
+                onClick={() => (window.location.href = "/seguridad")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
@@ -156,7 +156,6 @@ export default class inicio extends Component {
             </ReactBootstrap.Col>
             <ReactBootstrap.Col
               className="d-flex my-2 justify-content-md-center"
-              onClick={() => (window.location = "/ventasApp")}
             >
               <ReactBootstrap.Card
                 style={{
@@ -167,6 +166,7 @@ export default class inicio extends Component {
                   alignItems: "center",
                   backgroundColor: "#F5F5F5",
                 }}
+                onClick={() => (window.location.href = "/ventasApp")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
