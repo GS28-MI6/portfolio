@@ -1,17 +1,9 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Tech from "../resources/tech.jpg";
-import Card1 from "../resources/capturas/monitoreo.PNG";
-import Card2 from "../resources/capturas/comercio.png";
-import Card3 from "../resources/capturas/seguridad.jpg";
-import Card4 from "../resources/capturas/comercioApp.jpg";
-import LogoRedux from "../resources/logos/redux.png";
-import LogoReact from "../resources/logos/react.png";
-import LogoNode from "../resources/logos/node.png";
-import LogoJavascript from "../resources/logos/javascript.png";
-import LogoHtml from "../resources/logos/html.png";
-import LogoCss from "../resources/logos/css.png";
+import images  from "../imageIndex"
+
+const {Tech, Monitoreo, Comercio, Seguridad, ComercioApp, LogoCss, LogoHtml, LogoJavascript, LogoNode, LogoReact, LogoRedux} = images
 
 export default class inicio extends Component {
   render() {
@@ -88,16 +80,14 @@ export default class inicio extends Component {
         <h2 className="mt-5">Mis proyetos</h2>
         <ReactBootstrap.Container fluid className="my-5 mx-0">
           <ReactBootstrap.Row className="d-flex justify-content-md-center mt-5">
-            <ReactBootstrap.Col
-              className="d-flex my-2 justify-content-md-center"
-            >
+            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
               <ReactBootstrap.Card
                 style={{ width: "40rem", cursor: "pointer" }}
                 onClick={() => (window.location.href = "/monitoreo")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
-                  src={Card1}
+                  src={Monitoreo}
                   style={{ width: "100%", height: 350 }}
                 />
                 <ReactBootstrap.Card.Body>
@@ -107,16 +97,14 @@ export default class inicio extends Component {
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
-            <ReactBootstrap.Col
-              className="d-flex my-2 justify-content-md-center"
-            >
+            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
               <ReactBootstrap.Card
                 style={{ width: "40rem", cursor: "pointer" }}
                 onClick={() => (window.location.href = "/ventas")}
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
-                  src={Card2}
+                  src={Comercio}
                   style={{ width: "100%", height: 350 }}
                 />
                 <ReactBootstrap.Card.Body>
@@ -128,9 +116,7 @@ export default class inicio extends Component {
             </ReactBootstrap.Col>
           </ReactBootstrap.Row>
           <ReactBootstrap.Row className="d-flex justify-content-md-center mt-5">
-            <ReactBootstrap.Col
-              className="d-flex my-2 justify-content-md-center"
-            >
+            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
               <ReactBootstrap.Card
                 style={{
                   width: "40rem",
@@ -144,19 +130,19 @@ export default class inicio extends Component {
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
-                  src={Card3}
+                  src={Seguridad}
                   style={{ width: "40%", height: 350 }}
                 />
-                <ReactBootstrap.Card.Body style={{ width:"100%", backgroundColor: "white" }}>
+                <ReactBootstrap.Card.Body
+                  style={{ width: "100%", backgroundColor: "white" }}
+                >
                   <ReactBootstrap.Card.Title>
                     Aplicación de ventas
                   </ReactBootstrap.Card.Title>
                 </ReactBootstrap.Card.Body>
               </ReactBootstrap.Card>
             </ReactBootstrap.Col>
-            <ReactBootstrap.Col
-              className="d-flex my-2 justify-content-md-center"
-            >
+            <ReactBootstrap.Col className="d-flex my-2 justify-content-md-center">
               <ReactBootstrap.Card
                 style={{
                   width: "40rem",
@@ -170,10 +156,12 @@ export default class inicio extends Component {
               >
                 <ReactBootstrap.Card.Img
                   variant="top"
-                  src={Card4}
+                  src={ComercioApp}
                   style={{ width: "40%", height: 350 }}
                 />
-                <ReactBootstrap.Card.Body style={{ width:"100%", backgroundColor: "white" }}>
+                <ReactBootstrap.Card.Body
+                  style={{ width: "100%", backgroundColor: "white" }}
+                >
                   <ReactBootstrap.Card.Title>
                     Card Title
                   </ReactBootstrap.Card.Title>

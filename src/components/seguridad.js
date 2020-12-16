@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Seguridad from "../resources/capturas/seguridad.jpg";
-import Seguridad2 from "../resources/capturas/seguridad2.jpg";
-import Seguridad3 from "../resources/capturas/seguridad3.jpg";
-import Seguridad4 from "../resources/capturas/seguridad4.jpg";
-import LogoReact from "../resources/logos/react.png";
-import LogoNode from "../resources/logos/node.png";
-import LogoJavascript from "../resources/logos/javascript.png";
-import LogoCss from "../resources/logos/css.png";
+import images  from "../imageIndex"
+
+const {Seguridad, Seguridad2, Seguridad3, Seguridad4, LogoCss, LogoJavascript, LogoNode, LogoReact} = images
 
 export default class seguridad extends Component {
   render() {

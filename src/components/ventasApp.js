@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import VentasApp from "../resources/capturas/ventasApp.jpg";
-import VentasApp2 from "../resources/capturas/ventasApp2.jpg";
-import LogoReact from "../resources/logos/react.png";
-import LogoNode from "../resources/logos/node.png";
-import LogoJavascript from "../resources/logos/javascript.png";
-import LogoCss from "../resources/logos/css.png";
+import images  from "../imageIndex"
+
+const {ComercioApp, ComercioApp2, LogoCss, LogoJavascript, LogoNode, LogoReact} = images
 
 export default class ventasApp extends Component {
   render() {
@@ -31,11 +28,11 @@ export default class ventasApp extends Component {
             className="py-2 px-2 h-100 text-align-center d-flex justify-content-around"
           >
             <ReactBootstrap.Image
-              src={VentasApp}
+              src={ComercioApp}
               style={{ width: "auto", height: "80%" }}
             />
             <ReactBootstrap.Image
-              src={VentasApp2}
+              src={ComercioApp2}
               style={{ width: "auto", height: "80%" }}
             />
           </ReactBootstrap.Container>

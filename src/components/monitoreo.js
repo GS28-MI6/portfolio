@@ -1,16 +1,9 @@
 import React, { Component } from "react";
 import * as ReactBootstrap from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Monitoreo from "../resources/capturas/monitoreo.PNG";
-import Monitoreo2 from "../resources/capturas/monitoreo2.PNG";
-import Monitoreo3 from "../resources/capturas/monitoreo3.PNG";
-import Monitoreo4 from "../resources/capturas/monitoreo4.PNG";
-import LogoRedux from "../resources/logos/redux.png";
-import LogoReact from "../resources/logos/react.png";
-import LogoNode from "../resources/logos/node.png";
-import LogoJavascript from "../resources/logos/javascript.png";
-import LogoHtml from "../resources/logos/html.png";
-import LogoCss from "../resources/logos/css.png";
+import images  from "../imageIndex"
+
+const {Monitoreo, Monitoreo2, Monitoreo3, Monitoreo4, LogoCss, LogoHtml, LogoJavascript, LogoNode, LogoReact, LogoRedux} = images
 
 export default class monitoreo extends Component {
   render() {
