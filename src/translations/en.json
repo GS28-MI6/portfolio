@@ -1,0 +1,35 @@
+{
+    "navbar" : {
+        "monitCenter": "Monitoring Center",
+        "panicApp": "Panic button application",
+        "ivaloWA": "Ivalo (Web Application)",
+        "ivaloMA": "Ivalo (Mobile Application)"
+    },
+    "start": {
+        "phrase": "Mobile and web applications developer with a drive for learning new tecnologies",
+        "proyects": "Projects",
+        "panicAppDesc": "A simple mobile application made to send alerts of different types. The application makes use of a propietary REST API which shares with another web application responsible of the reception  of said alerts. For more information enter into this card.",
+        "ivaloMADesc": "A mobile application designed to emulate a barcode scanner. this application uses websockets to communicate with its web counterpart thats logged in with the same user, to which it will send the data corresponding to the scanned barcode. For more information enter into this card."
+    },
+    "general" : {
+        "technologies":"Used technologies",
+        "description": "Description",
+        "observations": "Observations"
+    },
+    "monitor": {
+        "description": "A web application designed specifically to handle alerts sent drom another propietary application. It counts with a main window (where it shows the recived alerts) and a secondary window (where it shows the old alerts for statistic purposes), in addition to a window dedicated specifically to showing statistics in the form of various graphics with the hability to filter by types and dates.",
+        "observations": "For the development of this web application we worked with the redux library. One of the proyects strong points is the use of a propietary REST API built on Node and Express, which uses to populate itself. We also used the websockets library to boost the efficiency and performance of the application. Thanks to all this we reduced the overall performance of the app."
+    },
+    "security": {
+        "description": "A simple mobile application made to send alerts of different types. The application counts with a login and sign up systems, and the authentication is handled with jwt (json web tokens). The application uses this session data and sends them along with the selected alert type so these can be viewed by another propietary web application and handled properly.",
+        "observations": "The application makes use of a propietary REST API which shares with another web application responsible of the reception  of said alerts. for this application we used the react navigation libraries and implemented efficient resorce management techniques. This application is available in the google play store but it requires its users to be authenticated by our local police department for access being granted."
+    },
+    "ivaloWA": {
+        "description": "A web application designed to focus on ease of use, specially for the less experienced on basic computer handling. This application allows the user to more easily handle transactions by allowing him to scan each product and bring the data associated with it, plus it includes inventory and sales management features and a very complete set of statistics.",	
+        "observations": "The application is deployed in a EC2 AWS instance, it has a carefully built REST API (made in Node and Express) that feeds off a MySQL database, given the large volume of data we had to work with efficiency was one of the main focus points while building the application."
+    },
+    "ivaloMA": {
+        "description": "A mobile application designed to emulate a barcode scanner. we designed this to complement its web counterpart, given that we wanted to make the experience as easy to implement as possible an alternative to a barcode scanner was necessary as most stores wouldnt, necesarily, have one handy. Availability on the play store is still pending.",
+        "observations": "The application counts with a simple login system, and uses websockets to connect to its web peer. The application is used get the scanned products data via the REST API to an instance of the web app logged with the same user as the mobile application to give the same output as a barcode scanner would."
+    }
+}

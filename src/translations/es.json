@@ -1,0 +1,35 @@
+{
+    "navbar" : {
+        "monitCenter": "Centro de monitoreo",
+        "panicApp": "Boton anti-panico",
+        "ivaloWA": "Ivalo (Applicacion Web)",
+        "ivaloMA": "Ivalo (Applicacion Movil)"
+    },
+    "start": {
+        "phrase": "Desarrollador de aplicaciones web y moviles con entusiasmo por aprender nuevas tecnologias",
+        "proyects": "Projectos",
+        "panicAppDesc": "Una aplicacion movil hecha para el envio de alertas simples, de diferentes tipos. La aplicación hace uso de una API REST de creacion propia, que comparte con otra aplicacion web responsable de la recepcion de las alertas que esta envia. Para mas información, entrar en la tarjeta.",
+        "ivaloMADesc": "Una aplicacion movil hecha para emular el funcionamiento de un escanner de codigos de barra. La aplicacion usa websockets para comunicarse con una instancia de su contraparte web, que este logueada con su mismo usuario y le envia la informacion que el backend devuelve para cada codigo de barra escaneado.  Para mas información, entrar en la tarjeta."
+    },
+    "general" : {
+        "technologies":"Tecnologias usadas",
+        "description": "Descripción",
+        "observations": "Observaciones"
+    },
+    "monitor": {
+        "description": "Una aplicacion web hecha especificamente para la recepcion de alertas enviadas desde otra aplicacion propia. La misma cuenta con su bandeja principal (donde recive las alertas enviadas) y una bandeja secundaria (donde ve alertas alertas viejas por propositos estadisticos), ademas de una ventana dedicada especificamente al muestreo de datos estadisticos en forma de diversos graficos, con capacidad de filtrar por tipos y fechas.",
+        "observations": "Para el desarrollo de esta aplicacion web se trabajo con la libreria de redux. Uno de los puntos fuertes del proyecto es el uso de una API rest de creacion propia creada con node y express, que utiliza para nutrirse. Tambien se utilizo la herramienta websocket para aumentar la eficiencia y velocidad de respuesta de la aplicacion, gracias a esto se redujo significativamente el consumo de recursos de la misma."
+    },
+    "security": {
+        "description": "Una aplicacion movil hecha para el envio de alertas simples, de diferentes tipos. la aplicacion cuenta con un sistema de inicio de sesion y registro, la autenticacion se hace mediante tokens jwt (json web tokens). La aplicacion utiliza estos datos de sesion y los envia junto con informacion del tipo de alerta seleccionada para que estos puedan ser visualizados por otra aplicacion web de creacion propia y manejados de una manera especifica.",
+        "observations": "La aplicación hace uso de una API REST de creacion propia, que comparte con otra aplicacion web responsable de la recepcion de las alertas que esta envia. Para esta aplicacion se utilizaron las librerias de react navigate y se implementaron practicas de uso eficiente de los recursos del telefono. La misma se encuentra disponible para su descarga en la play store pero requiere que los usuarios sean manualmente habilitados para su funcionamiento (por cuestiones de validacion de identidad)"
+    },
+    "ivaloWA": {
+        "description": "Una aplicacion web diseñada en torno a la facilidad de uso, especialmente para los usuarion menos experimentados en el manejo de computadoras. Esta apliación le permite al usuario manejar de forma mas sencilla las transacciones ya que tiene la posibilidad de escanear cada producto y traer la informacion correspondiente al mismo, ademas le permite administrar su invetario y visualizar sus ventas mediante un muy completo conjunto de estadisticas.",	
+        "observations": "La aplicacion se encuentra alojada en una instacnia EC2 de AWS, tiene una API REST (hecha en Node y Express) que se alimenta de una base de datos MySQL, dado el gran volumen de datos con el que tuvimos que trabajar la eficiencia fue uno de los enfoques principales al crear la aplicación."
+    },
+    "ivaloMA": {
+        "description": "Una aplicacion movil creada para emular un escaner de condigo de barras. La diseñamos para complementar a su contraparte web, dado que queriamos hacer de la experiencia lo mas simple de implentar posible una alternativa a los escaneres de codigos de barra fue necesaria ya que la mayoria de los negocios no contarian, necesariamente, con uno. Disponibilidad en la play store de google pendiente por el momento.",
+        "observations": "La aplicacion cuenta con un sistema de login simple, y usa websockets para conectarse con su par web. La aplicacion se usa para obtener informacion de los productos mediante la API REST y enviarla a una instancia de la applicacion web que este logueada con la misma cuenta que la aplicacion, para generar una respuesta identica a un escaner de codigo de barras."
+    }
+}
